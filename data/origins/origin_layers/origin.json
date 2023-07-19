@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "origins": [
+        "fluffy-furry-origins:brai",
+        "fluffy-furry-origins:lasse",
+        "fluffy-furry-origins:metaflame",
+        "fluffy-furry-origins:tea-taur",
+        "fluffy-furry-origins:trask",
+        "fluffy-furry-origins:zoro"
+    ],
+    "exclude_random": [
+        "fluffy-furry-origins:brai",
+        "fluffy-furry-origins:lasse",
+        "fluffy-furry-origins:metaflame",
+        "fluffy-furry-origins:tea-taur",
+        "fluffy-furry-origins:trask",
+        "fluffy-furry-origins:zoro"
+    ],
+    "order": 2,
+    "loading_priority": 10
+}
