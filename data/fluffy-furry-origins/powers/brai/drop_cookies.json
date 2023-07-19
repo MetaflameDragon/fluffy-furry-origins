@@ -2,38 +2,38 @@
   "name": "Drop Cookies",
   "description": "",
   "type": "origins:action_over_time",
-  "interval": 20,
+  "interval": 150,
   "entity_action": {
     "type": "origins:chance",
-    "chance": 0.5,
+    "chance": 0.125,
     "action": {
       "type": "origins:choice",
       "actions": [
         {
           "element": {
             "type": "origins:execute_command",
-            "command": "summon minecraft:item ~ ~2 ~ {Item:{id:\"minecraft:cookie\",Count:1b},PickupDelay:20s,Motion:[0.08,0.2,0.04]}"
+            "command": "summon minecraft:item ~ ~2 ~ {Item:{id:\"minecraft:cookie\",Count:5b},PickupDelay:20s,Motion:[0.08,0.2,0.04]}"
           },
           "weight": 1
         },
         {
           "element": {
             "type": "origins:execute_command",
-            "command": "summon minecraft:item ~ ~2 ~ {Item:{id:\"minecraft:cookie\",Count:1b},PickupDelay:20s,Motion:[-0.09,0.15,0.01]}"
+            "command": "summon minecraft:item ~ ~2 ~ {Item:{id:\"minecraft:cookie\",Count:5b},PickupDelay:20s,Motion:[-0.09,0.15,0.01]}"
           },
           "weight": 1
         },
         {
           "element": {
             "type": "origins:execute_command",
-            "command": "summon minecraft:item ~ ~2 ~ {Item:{id:\"minecraft:cookie\",Count:1b},PickupDelay:20s,Motion:[0.03,0.21,0.06]}"
+            "command": "summon minecraft:item ~ ~2 ~ {Item:{id:\"minecraft:cookie\",Count:5b},PickupDelay:20s,Motion:[0.03,0.21,0.06]}"
           },
           "weight": 1
         },
         {
           "element": {
             "type": "origins:execute_command",
-            "command": "summon minecraft:item ~ ~2 ~ {Item:{id:\"minecraft:cookie\",Count:1b},PickupDelay:20s,Motion:[-0.01,0.1,-0.06]}"
+            "command": "summon minecraft:item ~ ~2 ~ {Item:{id:\"minecraft:cookie\",Count:5b},PickupDelay:20s,Motion:[-0.01,0.1,-0.06]}"
           },
           "weight": 1
         }
