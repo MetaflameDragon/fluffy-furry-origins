@@ -11,33 +11,29 @@
       "actions": [
         {
           "element": {
-            "type": "origins:spawn_entity",
-            "entity_type": "minecraft:item",
-            "tag": "{Item:{id:\"minecraft:cookie\",Count:1b},PickupDelay:20s,Motion:[0.08,0.4,0.04]}"
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~2 ~ {Item:{id:\"minecraft:cookie\",Count:1b},PickupDelay:20s,Motion:[0.08,0.4,0.04]}"
           },
           "weight": 1
         },
         {
           "element": {
-            "type": "origins:spawn_entity",
-            "entity_type": "minecraft:item",
-            "tag": "{Item:{id:\"minecraft:cookie\",Count:1b},PickupDelay:20s,Motion:[-0.09,0.35,0.01]}"
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~2 ~ {Item:{id:\"minecraft:cookie\",Count:1b},PickupDelay:20s,Motion:[-0.09,0.35,0.01]}"
           },
           "weight": 1
         },
         {
           "element": {
-            "type": "origins:spawn_entity",
-            "entity_type": "minecraft:item",
-            "tag": "{Item:{id:\"minecraft:cookie\",Count:1b},PickupDelay:20s,Motion:[0.03,0.41,0.06]}"
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~2 ~ {Item:{id:\"minecraft:cookie\",Count:1b},PickupDelay:20s,Motion:[0.03,0.41,0.06]}"
           },
           "weight": 1
         },
         {
           "element": {
-            "type": "origins:spawn_entity",
-            "entity_type": "minecraft:item",
-            "tag": "{Item:{id:\"minecraft:cookie\",Count:1b},PickupDelay:20s,Motion:[-0.01,0.3,0.06]}"
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~2 ~ {Item:{id:\"minecraft:cookie\",Count:1b},PickupDelay:20s,Motion:[-0.01,0.3,-0.06]}"
           },
           "weight": 1
         }
