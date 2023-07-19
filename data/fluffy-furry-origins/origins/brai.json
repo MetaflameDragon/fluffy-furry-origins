@@ -1,11 +1,11 @@
 {
 	"powers": [
-		"fluffy-furry-origins:brai/climbing",
-		"origins:elytra",
 		"fluffy-furry-origins:brai/big",
-		"origins:lay_eggs",
-		"origins:more_exhaustion",
-		"fluffy-furry-origins:brai/claustrophobia"
+		"fluffy-furry-origins:brai/claustrophobia",
+		"fluffy-furry-origins:brai/climbing",
+		"fluffy-furry-origins:brai/drop_cookies",
+		"origins:elytra",
+		"origins:more_exhaustion"
 	],
 	"icon": "minecraft:cookie",
 	"order": 0,
