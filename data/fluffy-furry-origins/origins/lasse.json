@@ -1,7 +1,16 @@
 {
 	"powers": [
+		"origins:elytra",
+		"origins-plus-plus:ryu/winged",
+		"origins-plus-plus:ryu/lift_off",
+		"origins-plus-plus:ryu/so_much_weight",
+		"origins-plus-plus:ryu/big_body",
+		"origins:extra_reach",
+		"fluffy-furry-origins:lasse/life_steal",
+		"origins-plus-plus:sprinter/skinny",
+		"origins:carnivore"
 	],
-	"icon": "minecraft:cookie",
+	"icon": "minecraft:lime_dye",
 	"order": 0,
 	"impact": 2,
 	"name": "Lasse"

@@ -1,0 +1,50 @@
+{
+  "name": "life_steal",
+  "description": "",
+  "type": "origins:multiple",
+  "hunger": {
+    "type": "origins:self_action_on_hit",
+    "entity_action": {
+      "type": "origins:feed",
+      "food": 1,
+      "saturation": 0.5
+    },
+    "damage_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:amount",
+          "comparison": ">=",
+          "compare_to": 1
+        },
+        {
+          "type": "origins:name",
+          "name": "player"
+        }
+      ]
+    },
+    "cooldown": 5
+  },
+  "lifesteal_particles": {
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "particle minecraft:dust 1 0.2 0.2 0.8 ~ ~ ~ 0.6 0.2 0.6 1 10"
+    },
+    "damage_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:amount",
+          "comparison": ">=",
+          "compare_to": 1
+        },
+        {
+          "type": "origins:name",
+          "name": "player"
+        }
+      ]
+    },
+    "cooldown": 5
+  }
+}
