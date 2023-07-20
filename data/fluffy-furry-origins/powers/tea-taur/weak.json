@@ -1,0 +1,13 @@
+{
+  "name": "Weak",
+  "description": "",
+  "type":"origins:modify_damage_dealt",
+  "damage_condition": {
+    "type": "origins:name",
+    "name": "player"
+  },
+  "modifier":{
+    "operation":"multiply_total",
+    "value":-0.50
+  }
+}
