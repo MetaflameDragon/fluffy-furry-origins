@@ -10,14 +10,25 @@
       "change": 1
     },
     "condition": {
-      "type": "origins:equipped_item",
-      "equipment_slot": "mainhand",
-      "item_condition": {
-        "type": "origins:ingredient",
-        "ingredient": {
-          "item": "minecraft:emerald"
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:emerald"
+            }
+          }
         }
-      }
+      ]
     },
     "key": "key.origins.primary_active"
   }

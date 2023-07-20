@@ -43,11 +43,6 @@
               "effect": "minecraft:strength",
               "amplifier": 0,
               "duration": 40
-            },
-            {
-              "effect": "minecraft:saturation",
-              "amplifier": 0,
-              "duration": 40
             }
           ]
         }
@@ -65,10 +60,21 @@
       },
       {
         "condition": {
-          "type": "origins:resource",
-          "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
-          "comparison": "<",
-          "compare_to": 40
+          "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:resource",
+              "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
+              "comparison": ">=",
+              "compare_to": 30
+            },
+            {
+              "type": "origins:resource",
+              "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
+              "comparison": "<",
+              "compare_to": 40
+            }
+          ]
         },
         "action": {
           "type": "origins:apply_effect",
@@ -83,10 +89,21 @@
       },
       {
         "condition": {
-          "type": "origins:resource",
-          "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
-          "comparison": "<",
-          "compare_to": 50
+          "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:resource",
+              "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
+              "comparison": ">=",
+              "compare_to": 40
+            },
+            {
+              "type": "origins:resource",
+              "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
+              "comparison": "<",
+              "compare_to": 50
+            }
+          ]
         },
         "action": {
           "type": "origins:apply_effect",
@@ -101,8 +118,10 @@
       },
       {
         "condition": {
-          "type": "origins:constant",
-          "value": true
+          "type": "origins:resource",
+          "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
+          "comparison": ">=",
+          "compare_to": 50
         },
         "action": {
           "type": "origins:apply_effect",
