@@ -1,0 +1,24 @@
+{
+  "name": "Transform",
+  "description": "",
+  "type": "origins:multiple",
+  "item": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "fluffy-furry-origins:tea-taur/transformation_resources_is_active",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:emerald"
+        }
+      }
+    },
+    "key": "key.origins.primary_active"
+  }
+}
