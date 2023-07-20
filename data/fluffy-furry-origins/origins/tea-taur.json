@@ -1,11 +1,11 @@
 {
 	"powers": [
-		"origins-plus-plus:withered-fox/float",
-		"fluffy-furry-origins:tea_taur/jockey",
+		"fluffy-furry-origins:tea-taur/float",
+		"fluffy-furry-origins:tea-taur/jockey",
 		"origins-plus-plus:binturong/crouch",
 		"origins:fragile",
 		"origins-plus-plus:boarling/delicious",
-		"fluffy-furry-origins:tea_taur/weak",
+		"fluffy-furry-origins:tea-taur/weak",
 		"origins:more_exhaustion",
 		"origins:fresh_air"
 	],
