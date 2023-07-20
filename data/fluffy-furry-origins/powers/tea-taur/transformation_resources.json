@@ -1,0 +1,46 @@
+{
+  "name": "Transformation Resources",
+  "description": "",
+  "type": "origins:multiple",
+  "is_active": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+      "should_render": true
+    }
+  },
+  "age": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 50,
+    "hud_render": {
+      "should_render": true
+    }
+  },
+  "age_tick": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:resource",
+        "resource": "fluffy-furry-origins:tea-taur/transformation_resources_is_active",
+        "comparison": "==",
+        "compare_to": 0
+      },
+      "if_action": {
+        "type": "origins:change_resource",
+        "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
+        "operation": "set",
+        "change": 0
+      },
+      "else_action": {
+        "type": "origins:change_resource",
+        "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
+        "operation": "add",
+        "change": 1
+      }
+    }
+  }
+}

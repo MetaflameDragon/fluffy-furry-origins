@@ -8,7 +8,7 @@
       "type": "origins:if_else",
       "condition": {
         "type": "origins:resource",
-        "resource": "fluffy-furry-origins:tea-taur/transformation_resource",
+        "resource": "fluffy-furry-origins:tea-taur/transformation_resources_is_active",
         "comparison": "==",
         "compare_to": 0
       },
