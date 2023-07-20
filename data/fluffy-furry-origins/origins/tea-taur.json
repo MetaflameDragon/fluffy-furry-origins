@@ -2,12 +2,14 @@
 	"powers": [
 		"fluffy-furry-origins:tea-taur/float",
 		"fluffy-furry-origins:tea-taur/jockey",
-		"origins-plus-plus:binturong/crouch",
 		"origins:fragile",
 		"origins-plus-plus:boarling/delicious",
 		"fluffy-furry-origins:tea-taur/weak",
 		"origins:more_exhaustion",
-		"origins:fresh_air"
+		"origins:fresh_air",
+		"fluffy-furry-origins:tea-taur/transformation_resource",
+		"fluffy-furry-origins:tea-taur/transformation_activate",
+		"fluffy-furry-origins:tea-taur/size"
 	],
 	"icon": "minecraft:magenta_wool",
 	"order": 0,
