@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="Origin">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="Origin" />
+              <option name="relativePathToSchema" value="schemas/origin.json" />
+              <option name="schemaVersion" value="JSON Schema version 7" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="directory" value="true" />
+                    <option name="path" value="D:/tmp/origins/origins-plus-plus/data/origins-plus-plus/origins" />
+                    <option name="mappingKind" value="Directory" />
+                  </Item>
+                  <Item>
+                    <option name="directory" value="true" />
+                    <option name="path" value="D:/tmp/origins/origins/data/origins/origins" />
+                    <option name="mappingKind" value="Directory" />
+                  </Item>
+                  <Item>
+                    <option name="directory" value="true" />
+                    <option name="path" value="data/fluffy-furry-origins/origins" />
+                    <option name="mappingKind" value="Directory" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="Origin Layer">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="Origin Layer" />
+              <option name="relativePathToSchema" value="schemas/origin_layers.json" />
+              <option name="schemaVersion" value="JSON Schema version 7" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="directory" value="true" />
+                    <option name="path" value="D:/tmp/origins/origins-plus-plus/data/origins/origin_layers" />
+                    <option name="mappingKind" value="Directory" />
+                  </Item>
+                  <Item>
+                    <option name="directory" value="true" />
+                    <option name="path" value="D:/tmp/origins/origins/data/origins/origin_layers" />
+                    <option name="mappingKind" value="Directory" />
+                  </Item>
+                  <Item>
+                    <option name="directory" value="true" />
+                    <option name="path" value="data/origins/origin_layers" />
+                    <option name="mappingKind" value="Directory" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="Origin Power">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="Origin Power" />
+              <option name="relativePathToSchema" value="schemas/power.json" />
+              <option name="schemaVersion" value="JSON Schema version 7" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="directory" value="true" />
+                    <option name="path" value="D:/tmp/origins/origins-plus-plus/data/origins-plus-plus/powers" />
+                    <option name="mappingKind" value="Directory" />
+                  </Item>
+                  <Item>
+                    <option name="directory" value="true" />
+                    <option name="path" value="D:/tmp/origins/origins/data/origins/powers" />
+                    <option name="mappingKind" value="Directory" />
+                  </Item>
+                  <Item>
+                    <option name="directory" value="true" />
+                    <option name="path" value="data/fluffy-furry-origins/powers" />
+                    <option name="mappingKind" value="Directory" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>

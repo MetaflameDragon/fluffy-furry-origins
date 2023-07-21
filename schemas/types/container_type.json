@@ -1,0 +1,18 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/container_type.json",
+	"title": "Attribute Identifier",
+	"anyOf": [
+		{
+			"enum": [
+				"chest",
+				"hopper",
+				"dropper",
+				"dispenser",
+				"double_chest"
+			]
+		},
+		{
+			"type": "string"
+		}
+	]
+}

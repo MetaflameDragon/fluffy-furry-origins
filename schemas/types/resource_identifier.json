@@ -1,0 +1,15 @@
+{
+	"$id": "https://snavesutit.github.io/origins-mod-schemas/schemas/types/resource_identifier.json",
+	"title": "Identifier",
+	"anyOf": [
+		{
+			"const": "*:"
+		},
+		{
+			"const": "*:*_"
+		},
+		{
+			"$ref": "./identifier.json"
+		}
+	]
+}
