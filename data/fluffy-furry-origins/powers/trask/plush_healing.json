@@ -2,8 +2,17 @@
   "name": "plush_healing",
   "description": "",
   "type": "origins:active_self",
-  "key": "key.origins.secondary_active",
+  "key": "key.origins.primary_active",
   "cooldown": 20,
+  "hud_render": {
+    "should_render": true,
+    "condition":{
+      "type":"origins:resource",
+      "resource":"fluffy-furry-origins:trask/plush_healing",
+      "comparison":">",
+      "compare_to":0
+    }
+  },
   "condition": {
     "type": "origins:health",
     "comparison": "<",
@@ -19,7 +28,7 @@
           "item_condition": {
             "type": "origins:ingredient",
             "ingredient": {
-              "tag": "minecraft:string"
+              "item": "minecraft:string"
             }
           }
         },
