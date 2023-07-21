@@ -12,11 +12,11 @@
     },
     "condition": {
       "type": "origins:resource",
-      "resource": "fluffy-furry-origins:tea-taur/transformation_resources_is_active",
-      "comparison": "==",
-      "compare_to": 1
+      "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
+      "comparison": "!=",
+      "compare_to": 0
     },
-    "key": "key.origins.primary_active"
+    "key": "key.origins.secondary_active"
   },
   "hunger": {
     "type": "origins:action_over_time",
