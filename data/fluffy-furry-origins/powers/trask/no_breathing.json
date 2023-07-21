@@ -1,0 +1,16 @@
+{
+  "name": "no_breathing",
+  "description": "",
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:water_breathing",
+      "duration": 999,
+      "amplifier": 0,
+      "show_particles": false,
+      "show_icon": false
+    }
+  }
+}
