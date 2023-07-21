@@ -1,0 +1,27 @@
+{
+  "name": "no_hunger",
+  "description": "",
+  "type": "origins:multiple",
+  "hidden": true,
+  "no_hunger": {
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+      "type": "origins:feed",
+      "food": 1,
+      "saturation": 0
+    },
+    "condition": {
+      "type": "origins:food_level",
+      "comparison": "<=",
+      "compare_to": 14
+    }
+  },
+  "no_exhaustion": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "value": 0,
+      "operation": "multiply_total"
+    }
+  }
+}

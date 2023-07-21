@@ -1,0 +1,11 @@
+{
+  "name": "area_buff",
+  "description": "",
+  "type": "origins:active_self",
+  "key": "key.origins.secondary_active",
+  "cooldown": 100,
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "function fluffy-furry-origins:trask/area_buff"
+  }
+}
