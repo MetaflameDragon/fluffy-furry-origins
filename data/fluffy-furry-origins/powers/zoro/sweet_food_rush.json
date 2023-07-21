@@ -1,0 +1,30 @@
+{
+  "name": "Sweet Food Rush",
+  "description": "",
+  "type": "origins:modify_food",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:cookie"
+    }
+  },
+  "food_modifier": {
+    "operation": "addition",
+    "value": 2
+  },
+  "saturation_modifier": {
+    "operation": "addition",
+    "value": 0.6
+  },
+  "always_edible": true,
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effects": [
+      {
+        "effect": "minecraft:strength",
+        "duration": 200,
+        "amplifier": 0
+      }
+    ]
+  }
+}
