@@ -8,7 +8,7 @@
 		"fluffy-furry-origins:trask/absorbent",
 		"fluffy-furry-origins:trask/plush_healing"
 	],
-	"icon": "minecraft:wool",
+	"icon": "minecraft:white_wool",
 	"order": 0,
 	"impact": 2,
 	"name": "Trask"
