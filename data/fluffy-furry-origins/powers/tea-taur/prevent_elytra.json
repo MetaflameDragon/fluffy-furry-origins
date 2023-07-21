@@ -1,0 +1,11 @@
+{
+  "name": "prevent_elytra",
+  "description": "",
+  "type": "origins:restrict_armor",
+  "chest": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:elytra"
+    }
+  }
+}
