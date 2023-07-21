@@ -1,0 +1,51 @@
+{
+  "type": "origins:multiple",
+  "fragile": {
+    "type": "apoli:attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "name": "Fragile health reduction",
+      "operation": "addition",
+      "value": -6.0
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "fluffy-furry-origins:tea-taur/transformation_resources_is_active",
+      "comparison": "==",
+      "compare_to": 0
+    }
+  },
+  "health_boost": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:status_effect",
+        "effect": "minecraft:health_boost",
+        "min_amplifier": 13
+      },
+      "if_action": {
+        "type": "origins:nothing"
+      },
+      "else_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:health_boost",
+          "duration": 9999,
+          "amplifier": 13
+        }
+      }
+    },
+    "falling_action": {
+      "type": "origins:clear_effect",
+      "effect": "minecraft:health_boost"
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "fluffy-furry-origins:tea-taur/transformation_resources_is_active",
+      "comparison": "==",
+      "compare_to": 1
+    }
+  }
+}

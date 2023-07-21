@@ -2,14 +2,13 @@
 	"powers": [
 		"fluffy-furry-origins:tea-taur/float",
 		"fluffy-furry-origins:tea-taur/jockey",
-		"origins:fragile",
 		"origins-plus-plus:boarling/delicious",
-		"fluffy-furry-origins:tea-taur/weak",
 		"origins:more_exhaustion",
 		"origins:fresh_air",
 		"fluffy-furry-origins:tea-taur/transformation_resources",
 		"fluffy-furry-origins:tea-taur/transformation_activate",
 		"fluffy-furry-origins:tea-taur/transformation_deactivate",
+		"fluffy-furry-origins:tea-taur/health",
 		"fluffy-furry-origins:tea-taur/size",
 		"fluffy-furry-origins:tea-taur/transformation_status_effects"
 	],

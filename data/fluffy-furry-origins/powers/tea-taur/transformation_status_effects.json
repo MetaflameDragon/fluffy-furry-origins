@@ -11,6 +11,24 @@
           "type": "origins:resource",
           "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
           "comparison": "<",
+          "compare_to": 4
+        },
+        "action": {
+          "type": "origins:apply_effect",
+          "effects": [
+            {
+              "effect": "minecraft:saturation",
+              "amplifier": 1,
+              "duration": 40
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:resource",
+          "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
+          "comparison": "<",
           "compare_to": 10
         },
         "action": {
@@ -18,11 +36,6 @@
           "effects": [
             {
               "effect": "minecraft:strength",
-              "amplifier": 1,
-              "duration": 40
-            },
-            {
-              "effect": "minecraft:saturation",
               "amplifier": 1,
               "duration": 40
             }
