@@ -97,8 +97,10 @@
   "respawn": {
     "type": "origins:action_on_callback",
     "entity_action_respawned": {
-      "type": "origins:execute_command",
-      "command": "resource set @s origins-plus-plus:withered-fox/float_resource 300"
+      "type": "origins:change_resource",
+      "resource": "fluffy-furry-origins:tea-taur/float_resource",
+      "change": 300,
+      "operation": "set"
     }
   }
 }
