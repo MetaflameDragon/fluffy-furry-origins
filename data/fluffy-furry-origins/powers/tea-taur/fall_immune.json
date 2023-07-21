@@ -1,0 +1,9 @@
+{
+  "name": "Fall-immune",
+  "description": "",
+  "type": "origins:invulnerability",
+  "damage_condition": {
+    "type": "origins:name",
+    "name": "fall"
+  }
+}
