@@ -15,13 +15,8 @@
   },
   "toggle": {
     "type": "origins:toggle",
-    "key": "key.jump",
-    "active_by_default": false,
-    "retain_state": false,
-    "condition": {
-      "type": "origins:sneaking",
-      "inverted": true
-    }
+    "key": "key.origins.primary_active",
+    "active_by_default": false
   },
   "weak": {
     "type": "origins:stacking_status_effect",
