@@ -1,6 +1,6 @@
 {
   "name": "Height? What's that?",
-  "description": "When you're small you can't get enough energy to be hurt from falling",
+  "description": "When you're small you can't get enough kinetic energy to be hurt from falling.",
   "type": "origins:invulnerability",
   "damage_condition": {
     "type": "origins:name",

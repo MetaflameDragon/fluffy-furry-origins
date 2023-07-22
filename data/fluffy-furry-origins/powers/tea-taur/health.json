@@ -1,6 +1,6 @@
 {
   "name": "Size matters",
-  "description": "When you're small you have 3 hearts less than normal, when in dragon form you can have 15 hearts more than normal.",
+  "description": "When you're small form you have 3 hearts less than normal, when in large form you can have 15 hearts more than normal.",
   "type": "origins:multiple",
   "fragile": {
     "type": "apoli:attribute",

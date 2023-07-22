@@ -1,6 +1,6 @@
 {
-  "name": "area_buff",
-  "description": "",
+  "name": "Area Buff",
+  "description": "Buff up the friends around you within a 6m radius.",
   "type": "origins:active_self",
   "key": "key.origins.secondary_active",
   "cooldown": 100,

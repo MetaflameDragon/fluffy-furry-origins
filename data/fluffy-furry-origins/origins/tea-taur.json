@@ -6,17 +6,17 @@
 		"origins:more_exhaustion",
 		"origins:fresh_air",
 		"fluffy-furry-origins:tea-taur/fall_immune",
-		"fluffy-furry-origins:tea-taur/prevent_elytra",
-		"fluffy-furry-origins:tea-taur/transformation_resources",
-		"fluffy-furry-origins:tea-taur/transformation_activate",
-		"fluffy-furry-origins:tea-taur/transformation_deactivate",
 		"fluffy-furry-origins:tea-taur/health",
 		"fluffy-furry-origins:tea-taur/size",
-		"fluffy-furry-origins:tea-taur/transformation_status_effects"
+		"fluffy-furry-origins:tea-taur/transformation_activate",
+		"fluffy-furry-origins:tea-taur/transformation_resources",
+		"fluffy-furry-origins:tea-taur/transformation_deactivate",
+		"fluffy-furry-origins:tea-taur/transformation_status_effects",
+		"fluffy-furry-origins:tea-taur/prevent_elytra"
 	],
 	"icon": "minecraft:magenta_wool",
 	"order": 0,
 	"impact": 2,
 	"name": "Tea Taur",
-	"description": "Cuteness from small kobold to large dragon."
+	"description": "Cuteness from small taur to large taur."
 }

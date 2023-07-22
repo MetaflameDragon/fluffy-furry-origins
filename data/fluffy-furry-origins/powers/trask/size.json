@@ -1,6 +1,6 @@
 {
-  "name": "transform_size",
-  "description": "",
+  "name": "Small Plushie",
+  "description": "You're a small huggable plush size, making you only 1 block tall.",
   "type": "origins:multiple",
   "scale": {
     "type": "origins:action_over_time",

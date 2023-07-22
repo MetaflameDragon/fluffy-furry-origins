@@ -1,6 +1,6 @@
 {
-  "name": "fire_weakness",
-  "description": "",
+  "name": "Highly Flammable",
+  "description": "You're made from highly flammable materials, and therefore you take a lot more damage from fire.",
   "type": "origins:modify_damage_taken",
   "damage_condition": {
     "type": "origins:fire"

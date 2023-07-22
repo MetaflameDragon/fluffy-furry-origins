@@ -1,6 +1,6 @@
 {
-  "name": "absorbent",
-  "description": "",
+  "name": "Absorbent",
+  "description": "Being made of cloth makes you absorb water much easier, making you much heavier and slower.",
   "type":"origins:stacking_status_effect",
   "min_stacks":0,
   "max_stacks":1,

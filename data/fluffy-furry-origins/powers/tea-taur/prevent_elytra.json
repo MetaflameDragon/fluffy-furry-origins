@@ -1,6 +1,6 @@
 {
-  "name": "prevent_elytra",
-  "description": "",
+  "name": "Too small for wings",
+  "description": "Elytras are too big for you to operate.",
   "type": "origins:restrict_armor",
   "chest": {
     "type": "origins:ingredient",
