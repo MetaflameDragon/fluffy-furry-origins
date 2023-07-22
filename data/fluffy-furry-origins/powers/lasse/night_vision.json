@@ -1,0 +1,26 @@
+{
+  "name": "night_vision",
+  "description": "",
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:night_vision",
+      "duration": 400
+    }
+  },
+  "key": "key.origins.secondary_active",
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 0,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "fluffy-furry-origins:lasse/night_vision",
+      "comparison": ">",
+      "compare_to": 0
+    },
+    "inverted": true
+  },
+  "cooldown": 800
+}
