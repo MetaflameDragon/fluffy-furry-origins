@@ -1,6 +1,6 @@
 {
-  "name": "Sentient Toy",
-  "description": "You're not alive like other organic creatures, and you therefore don't need to breathe nor eat.",
+  "name": "",
+  "description": "",
   "type": "origins:stacking_status_effect",
   "min_stacks": 0,
   "max_stacks": 1,

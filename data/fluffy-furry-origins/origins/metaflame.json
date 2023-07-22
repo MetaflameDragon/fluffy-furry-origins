@@ -1,7 +1,11 @@
 {
   "powers": [
     "fluffy-furry-origins:metaflame/potion_effect_immunity",
-    "fluffy-furry-origins:metaflame/self_repair"
+    "fluffy-furry-origins:metaflame/self_repair",
+    "origins-plus-plus:metaflame/no_breathing",
+    "origins-plus-plus:part-robot/already_iron",
+    "origins-plus-plus:part-robot/boiling",
+    "origins-plus-plus:part-robot/no_regeneration"
   ],
   "icon": "create:mechanical_arm",
   "order": 0,
