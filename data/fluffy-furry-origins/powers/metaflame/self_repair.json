@@ -1,6 +1,6 @@
 {
-  "name": "self_repair",
-  "description": "",
+  "name": "Self maintenance",
+  "description": "You can't heal natrually and instead need to repair yourself with metals, processed sheets are much easier to apply.",
   "type": "origins:multiple",
   "use_item": {
     "type": "origins:active_self",

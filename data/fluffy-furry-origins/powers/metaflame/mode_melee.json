@@ -1,6 +1,7 @@
 {
   "name": "mode_melee",
   "description": "",
+  "hidden": true,
   "type": "origins:multiple",
   "damage_boost": {
     "type": "origins:modify_damage_dealt",
