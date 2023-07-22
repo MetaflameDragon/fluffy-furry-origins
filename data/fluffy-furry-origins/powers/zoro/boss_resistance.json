@@ -1,4 +1,6 @@
 {
+  "name": "Boss Resistence",
+  "description": "You take less damage from bosses.",
   "type": "origins:modify_damage_taken",
   "damage_condition": {
     "type": "origins:attacker",

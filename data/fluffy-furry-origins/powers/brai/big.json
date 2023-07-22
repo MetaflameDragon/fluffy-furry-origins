@@ -1,7 +1,7 @@
 {
   "type": "origins:multiple",
   "name": "Big",
-  "description": "",
+  "description": "In this state you're a big fellow, as tall as 4 blocks!",
   "scale": {
     "type": "origins:action_over_time",
     "entity_action": {

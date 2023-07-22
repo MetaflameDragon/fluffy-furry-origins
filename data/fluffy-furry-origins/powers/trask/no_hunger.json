@@ -1,6 +1,6 @@
 {
   "name": "no_hunger",
-  "description": "",
+  "description": "This one's explanation is under the no breathing.",
   "type": "origins:multiple",
   "hidden": true,
   "no_hunger": {

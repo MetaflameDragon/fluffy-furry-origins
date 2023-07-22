@@ -1,6 +1,5 @@
 {
-  "name": "transform_size",
-  "description": "",
+  "hidden": true,
   "type": "origins:multiple",
   "scale": {
     "type": "origins:action_over_time",

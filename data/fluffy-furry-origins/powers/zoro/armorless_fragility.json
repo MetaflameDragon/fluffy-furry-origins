@@ -1,6 +1,6 @@
 {
   "name": "Armorless Fragility",
-  "description": "",
+  "description": "Without armor you take a lot more damage.",
   "type": "origins:modify_damage_taken",
   "damage_modifier": {
     "type": "multiply_base_additive",

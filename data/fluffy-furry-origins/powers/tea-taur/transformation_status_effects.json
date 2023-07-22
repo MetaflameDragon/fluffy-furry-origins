@@ -1,6 +1,5 @@
 {
-  "name": "Transformation Status Effects",
-  "description": "",
+  "hidden":  true,
   "type": "origins:action_over_time",
   "interval": 20,
   "entity_action": {

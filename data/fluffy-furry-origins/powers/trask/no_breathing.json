@@ -1,6 +1,6 @@
 {
-  "name": "no_breathing",
-  "description": "",
+  "name": "Sentient Toy",
+  "description": "You're not alive like other organic creatues, and you therefore don't need to breathe nor eat.",
   "type": "origins:action_over_time",
   "interval": 20,
   "entity_action": {

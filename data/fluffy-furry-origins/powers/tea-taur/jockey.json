@@ -1,6 +1,6 @@
 {
-  "name": "Jockey",
-  "description": "",
+  "name": "Carryable",
+  "description": "While small you're able to ride any other player!",
   "type": "origins:active_self",
   "entity_action": {
     "type": "origins:raycast",

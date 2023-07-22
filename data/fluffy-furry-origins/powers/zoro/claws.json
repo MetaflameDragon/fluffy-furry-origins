@@ -1,6 +1,6 @@
 {
-  "name": "claws",
-  "description": "",
+  "name": "Sharp Claws",
+  "description": "You deal much greater damage thanks to your sharp long claws!",
   "type": "origins:modify_damage_dealt",
   "modifier": {
     "operation": "addition",

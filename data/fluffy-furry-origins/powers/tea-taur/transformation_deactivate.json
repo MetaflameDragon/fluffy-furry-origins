@@ -1,6 +1,5 @@
 {
-  "name": "Transform Deactivate",
-  "description": "",
+  "hidden": true,
   "type": "origins:multiple",
   "manual": {
     "type": "origins:active_self",

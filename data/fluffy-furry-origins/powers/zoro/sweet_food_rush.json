@@ -1,6 +1,6 @@
 {
   "name": "Sweet Food Rush",
-  "description": "",
+  "description": "Eating sweet foods gives you a rush of buffs that last for a short while.",
   "type": "origins:modify_food",
   "item_condition": {
     "type": "origins:ingredient",

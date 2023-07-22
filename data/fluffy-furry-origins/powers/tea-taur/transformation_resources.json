@@ -1,6 +1,5 @@
 {
-  "name": "Transformation Resources",
-  "description": "",
+  "hidden": true,
   "type": "origins:multiple",
   "is_active": {
     "type": "origins:resource",
