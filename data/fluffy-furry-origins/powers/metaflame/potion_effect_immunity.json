@@ -6,6 +6,9 @@
     "minecraft:poison",
     "minecraft:wither",
     "minecraft:weakness",
-    "minecraft:hunger"
+    "minecraft:hunger",
+    "minecraft:instant_damage",
+    "minecraft:instant_health",
+    "minecraft:regeneration"
   ]
 }

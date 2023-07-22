@@ -1,11 +1,11 @@
 {
-	"powers": [
-		"fluffy-furry-origins:metaflame/effect_immunity",
-		"fluffy-furry-origins:metaflame/self_repair"
-	],
-	"icon": "create:mechanical_arm",
-	"order": 0,
-	"impact": 2,
-	"name": "Metaflame",
-	"description": "A friendly and helpful robodragon. Always happy to help."
+  "powers": [
+    "fluffy-furry-origins:metaflame/potion_effect_immunity",
+    "fluffy-furry-origins:metaflame/self_repair"
+  ],
+  "icon": "create:mechanical_arm",
+  "order": 0,
+  "impact": 2,
+  "name": "Metaflame",
+  "description": "A friendly and helpful robodragon. Always happy to help."
 }
