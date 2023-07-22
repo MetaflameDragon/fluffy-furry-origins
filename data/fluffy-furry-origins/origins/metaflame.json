@@ -1,5 +1,7 @@
 {
 	"powers": [
+		"fluffy-furry-origins:metaflame/effect_immunity",
+		"fluffy-furry-origins:metaflame/self_repair"
 	],
 	"icon": "create:mechanical_arm",
 	"order": 0,

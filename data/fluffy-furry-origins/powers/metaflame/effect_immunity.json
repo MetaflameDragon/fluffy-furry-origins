@@ -1,0 +1,11 @@
+{
+  "name": "effect_immunity",
+  "description": "",
+  "type": "origins:effect_immunity",
+  "effects": [
+    "minecraft:poison",
+    "minecraft:wither",
+    "minecraft:weakness",
+    "minecraft:hunger"
+  ]
+}
