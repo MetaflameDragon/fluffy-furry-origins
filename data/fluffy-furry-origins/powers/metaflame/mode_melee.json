@@ -1,0 +1,61 @@
+{
+  "name": "mode_melee",
+  "description": "",
+  "type": "origins:multiple",
+  "damage_boost": {
+    "type": "origins:modify_damage_dealt",
+    "modifiers": [
+      {
+        "operation": "multiply_base_additive",
+        "value": 0.3
+      },
+      {
+        "operation": "add_base_late",
+        "value": 1
+      }
+    ],
+    "bientity_condition": {
+      "type": "origins:actor_condition",
+      "condition": {
+        "__comment": "Workaround, using only condition doesn't work here",
+        "type": "origins:resource",
+        "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
+        "comparison": "==",
+        "compare_to": 2
+      }
+    }
+  },
+  "no_ranged": {
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "fluffy-furry-origins:ranged"
+      }
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
+      "comparison": "==",
+      "compare_to": 2
+    }
+  },
+  "exhaustion": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "name": "Increased exhaustion",
+      "operation": "multiply_base",
+      "value": 4.0
+    },
+    "bientity_condition": {
+      "type": "origins:actor_condition",
+      "condition": {
+        "__comment": "Workaround, using only condition doesn't work here",
+        "type": "origins:resource",
+        "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
+        "comparison": "==",
+        "compare_to": 2
+      }
+    }
+  }
+}

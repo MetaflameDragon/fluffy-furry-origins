@@ -9,7 +9,8 @@
     "fluffy-furry-origins:metaflame/hunger_fueling",
     "origins-plus-plus:part-robot/no_regeneration",
     "fluffy-furry-origins:metaflame/mode_toggle",
-    "fluffy-furry-origins:metaflame/mode_drill"
+    "fluffy-furry-origins:metaflame/mode_drill",
+    "fluffy-furry-origins:metaflame/mode_melee"
   ],
   "icon": "create:mechanical_arm",
   "order": 0,
