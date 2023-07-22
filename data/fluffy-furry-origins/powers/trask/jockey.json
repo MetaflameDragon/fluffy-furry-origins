@@ -1,5 +1,5 @@
 {
-  "name": "Carryable",
+  "name": "Carriable",
   "description": "Because of your small and lightweight size you're able to ride any other player.",
   "type": "origins:active_self",
   "entity_action": {
