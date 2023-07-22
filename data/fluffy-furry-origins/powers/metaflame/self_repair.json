@@ -23,7 +23,7 @@
           "item_condition": {
             "type": "origins:ingredient",
             "ingredient": {
-              "item": "minecraft:iron_ingot"
+              "tag": "fluffy-furry-origins:self_repair_metal_items"
             }
           }
         }
@@ -52,10 +52,6 @@
       "type": "origins:and",
       "actions": [
         {
-          "type": "origins:heal",
-          "amount": 2
-        },
-        {
           "type": "origins:equipped_item_action",
           "equipment_slot": "mainhand",
           "action": {
@@ -68,6 +64,43 @@
           "resource": "fluffy-furry-origins:metaflame/self_repair_use_progress",
           "operation": "set",
           "change": 0
+        },
+        {
+          "type": "origins:if_else_list",
+          "actions": [
+            {
+              "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                  "type": "origins:ingredient",
+                  "ingredient": {
+                    "item": "minecraft:iron_ingot"
+                  }
+                }
+              },
+              "action": {
+                "type": "origins:heal",
+                "amount": 2
+              }
+            },
+            {
+              "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                  "type": "origins:ingredient",
+                  "ingredient": {
+                    "item": "create:iron_sheet"
+                  }
+                }
+              },
+              "action": {
+                "type": "origins:heal",
+                "amount": 4
+              }
+            }
+          ]
         }
       ]
     },
