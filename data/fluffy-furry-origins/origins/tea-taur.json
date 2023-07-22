@@ -17,5 +17,6 @@
 	"icon": "minecraft:magenta_wool",
 	"order": 0,
 	"impact": 2,
-	"name": "Tea Taur"
+	"name": "Tea Taur",
+	"description": "Cuteness from small kobold to large dragon."
 }

@@ -1,6 +1,6 @@
 {
   "name": "Claustrophobia",
-  "description": "",
+  "description": "Tight spaces aren't your strong suit, causing you to move slower.",
   "condition": {
     "type": "origins:block_collision",
     "offset_x": 0,

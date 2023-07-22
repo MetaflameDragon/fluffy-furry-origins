@@ -1,4 +1,6 @@
 {
+  "name": "Size matters",
+  "description": "When you're small you have 3 hearts less than normal, when in dragon form you can have 15 hearts more than normal.",
   "type": "origins:multiple",
   "fragile": {
     "type": "apoli:attribute",
@@ -22,7 +24,7 @@
       "condition": {
         "type": "origins:status_effect",
         "effect": "minecraft:health_boost",
-        "min_amplifier": 13
+        "min_amplifier": 8
       },
       "if_action": {
         "type": "origins:nothing"
@@ -32,7 +34,7 @@
         "effect": {
           "effect": "minecraft:health_boost",
           "duration": 9999,
-          "amplifier": 13
+          "amplifier": 8
         }
       }
     },

@@ -11,5 +11,6 @@
 	"icon": "minecraft:purple_dye",
 	"order": 0,
 	"impact": 2,
-	"name": "Zoro"
+	"name": "Zoro",
+	"description": "A wickerbeast of the [REDACTED] lands with a great dislike for the heat."
 }

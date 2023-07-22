@@ -1,6 +1,6 @@
 {
   "name": "Transform",
-  "description": "",
+  "description": "You're able to transform yourself back and forth between a small kobold and a large and strong dragon! (You're still adorable tho)",
   "type": "origins:multiple",
   "item": {
     "type": "origins:active_self",

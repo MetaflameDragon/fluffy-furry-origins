@@ -1,6 +1,6 @@
 {
   "name": "Drop Cookies",
-  "description": "",
+  "description": "You have a tendecy to drop Oreos out from your fur from time to time. (Nobody knows how they ended up there.)",
   "type": "origins:action_over_time",
   "interval": 150,
   "entity_action": {

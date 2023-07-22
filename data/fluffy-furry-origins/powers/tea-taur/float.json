@@ -1,6 +1,6 @@
 {
   "name": "Float",
-  "description": "",
+  "description": "You can float for small periods of time, allowing you to reach that top shelf with the cookie jar.",
   "type": "origins:multiple",
   "resource": {
     "type": "origins:resource",

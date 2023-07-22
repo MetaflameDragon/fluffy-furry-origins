@@ -4,5 +4,6 @@
 	"icon": "create:mechanical_arm",
 	"order": 0,
 	"impact": 2,
-	"name": "Metaflame"
+	"name": "Metaflame",
+	"description": "A friendly and helpful robodragon. Always happy to help."
 }
