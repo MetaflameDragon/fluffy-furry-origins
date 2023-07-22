@@ -1,0 +1,93 @@
+{
+  "name": "hot_biome",
+  "description": "// Slowness 2, Mining Fatigue 2, and twice the exhaustion in hot biomes under sunlight or in the Nether, unless you have Fire Resistance.",
+  "type": "origins:multiple",
+  "status_effects": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "effects": [
+      {
+        "effect": "minecraft:slowness",
+        "amplifier": 1,
+        "show_particles": false,
+        "show_icon": false
+      },
+      {
+        "effect": "minecraft:mining_fatigue",
+        "amplifier": 1,
+        "show_particles": false,
+        "show_icon": false
+      }
+    ],
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:temperature",
+            "comparison": ">=",
+            "compare_to": 2
+          }
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:exposed_to_sun"
+            },
+            {
+              "type": "origins:dimension",
+              "dimension": "minecraft:the_nether"
+            }
+          ]
+        },
+        {
+          "type": "origins:status_effect",
+          "effect": "minecraft:fire_resistance",
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "exhaustion": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "name": "Increased exhaustion",
+      "operation": "multiply_base",
+      "value": 2.0
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:temperature",
+            "comparison": ">=",
+            "compare_to": 2
+          }
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:exposed_to_sun"
+            },
+            {
+              "type": "origins:dimension",
+              "dimension": "minecraft:the_nether"
+            }
+          ]
+        },
+        {
+          "type": "origins:status_effect",
+          "effect": "minecraft:fire_resistance",
+          "inverted": true
+        }
+      ]
+    }
+  }
+}
