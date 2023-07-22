@@ -1,0 +1,58 @@
+{
+  "name": "mode_drill",
+  "description": "",
+  "type": "origins:multiple",
+  "slow_attack": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "effects": [
+      {
+        "effect": "minecraft:mining_fatigue",
+        "amplifier": 1,
+        "show_particles": false,
+        "show_icon": false
+      },
+      {
+        "effect": "minecraft:slowness",
+        "amplifier": 1,
+        "show_particles": false,
+        "show_icon": false
+      }
+    ],
+    "condition": {
+      "type": "origins:resource",
+      "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
+      "comparison": "==",
+      "compare_to": 1
+    }
+  },
+  "mining_speed": {
+    "type": "origins:modify_break_speed",
+    "modifier": {
+      "operation": "multiply_base",
+      "value": 25
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
+      "comparison": "==",
+      "compare_to": 1
+    }
+  },
+  "exhaustion": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "name": "Increased exhaustion",
+      "operation": "multiply_base",
+      "value": 2.0
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
+      "comparison": "==",
+      "compare_to": 1
+    }
+  }
+}

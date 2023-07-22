@@ -1,0 +1,35 @@
+{
+  "name": "mode_toggle",
+  "description": "",
+  "type": "origins:multiple",
+  "indicator_bar": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 7,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+      "bar_index": 9
+    }
+  },
+  "toggle": {
+    "type": "origins:active_self",
+    "key": "key.origins.secondary_active",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:sneaking",
+        "inverted": true
+      },
+      "if_action": {
+        "type": "origins:change_resource",
+        "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
+        "change": 1
+      },
+      "else_action": {
+        "type": "origins:change_resource",
+        "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
+        "change": -1
+      }
+    }
+  }
+}
