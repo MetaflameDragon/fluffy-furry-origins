@@ -37,7 +37,7 @@
           "actions": [
             {
               "type": "origins:heal",
-              "amount": 4
+              "amount": 2
             },
             {
               "type": "origins:equipped_item_action",
