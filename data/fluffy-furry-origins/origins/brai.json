@@ -1,9 +1,10 @@
 {
 	"powers": [
-		"fluffy-furry-origins:brai/big",
+		"fluffy-furry-origins:brai/size",
 		"fluffy-furry-origins:brai/claustrophobia",
 		"fluffy-furry-origins:brai/climbing",
 		"fluffy-furry-origins:brai/drop_cookies",
+		"fluffy-furry-origins:brai/transformation",
 		"origins:elytra",
 		"origins:more_exhaustion"
 	],

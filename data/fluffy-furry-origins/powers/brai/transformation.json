@@ -1,0 +1,70 @@
+{
+  "name": "transformation",
+  "description": "",
+  "type": "origins:multiple",
+  "toggle": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "fluffy-furry-origins:brai/transformation_active_duration",
+      "operation": "set",
+      "change": 120
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "fluffy-furry-origins:brai/transformation_cooldown",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:resource",
+          "resource": "fluffy-furry-origins:brai/transformation_active_duration",
+          "comparison": "==",
+          "compare_to": 0
+        }
+      ]
+    },
+    "key": "key.origins.secondary_active"
+  },
+  "active_duration": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 60,
+    "min_action": {
+      "type": "origins:trigger_cooldown",
+      "power": "fluffy-furry-origins:brai/transformation_cooldown"
+    },
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+      "bar_index": 17,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "fluffy-furry-origins:brai/transformation_active_duration",
+        "comparison": ">",
+        "compare_to": 0
+      }
+    }
+  },
+  "active_duration_ticker": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "fluffy-furry-origins:brai/transformation_active_duration",
+      "change": -1
+    }
+  },
+  "cooldown": {
+    "type": "origins:cooldown",
+    "cooldown": 3600,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+      "bar_index": 9
+    }
+  }
+}
