@@ -1,6 +1,6 @@
 {
   "name": "Plush Repair",
-  "description": "You can't eat or heal naturally, you need to be repaired with the correct Materials. (String)",
+  "description": "You can't eat or heal naturally, you need to be repaired with the correct Materials. (Wool)",
   "type": "origins:active_self",
   "key": "key.origins.primary_active",
   "cooldown": 20,
