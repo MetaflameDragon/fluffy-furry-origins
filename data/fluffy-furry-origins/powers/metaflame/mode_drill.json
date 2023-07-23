@@ -9,6 +9,7 @@
     "duration_per_stack": 20,
     "effects": [
       {
+        "__comment": "Slows down mining to 9% and attack speed to 80%",
         "effect": "minecraft:mining_fatigue",
         "amplifier": 1,
         "show_particles": false,
@@ -48,11 +49,15 @@
       "operation": "multiply_base",
       "value": 2.0
     },
-    "condition": {
-      "type": "origins:resource",
-      "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
-      "comparison": "==",
-      "compare_to": 1
+    "bientity_condition": {
+      "type": "origins:actor_condition",
+      "condition": {
+        "__comment": "Workaround, using only condition doesn't work here",
+        "type": "origins:resource",
+        "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
+        "comparison": "==",
+        "compare_to": 1
+      }
     }
   }
 }
