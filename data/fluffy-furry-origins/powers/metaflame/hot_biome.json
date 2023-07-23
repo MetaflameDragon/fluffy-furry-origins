@@ -1,6 +1,7 @@
 {
-  "name": "hot_biome",
-  "description": "// Slowness 2, Mining Fatigue 2, and twice the exhaustion in hot biomes under sunlight or in the Nether, unless you have Fire Resistance.",
+  "name": "Running hot",
+  "description": "Your internal elemant produce a lot of heat and can easily overheat. Hot biomes and fire cause adverse effects making your systems thermal throttle or fail faster.",
+  // Slowness 2, Mining Fatigue 2, and twice the exhaustion in hot biomes under sunlight or in the Nether, unless you have Fire Resistance.
   "type": "origins:multiple",
   "status_effects": {
     "type": "origins:stacking_status_effect",

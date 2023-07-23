@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "Ip 68 Rated",
+  "description": "You are IP68 rated and therefore can go deep underwater without taking any damage.",
   "type": "origins:stacking_status_effect",
   "min_stacks": 0,
   "max_stacks": 1,

@@ -1,6 +1,6 @@
 {
-  "name": "mode_toggle",
-  "description": "",
+  "name": "Tool Modes!",
+  "description": "You're a walking multitool, you're able to switch between different tools modes! They are from start to finish: Off, Drill, Melee",
   "type": "origins:multiple",
   "indicator_bar": {
     "type": "origins:resource",

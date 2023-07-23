@@ -1,6 +1,7 @@
 {
   "name": "mode_drill",
   "description": "",
+  "hidden": true,
   "type": "origins:multiple",
   "slow_attack": {
     "type": "origins:stacking_status_effect",
