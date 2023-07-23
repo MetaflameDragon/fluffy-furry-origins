@@ -1,6 +1,6 @@
 {
-  "name": "transformation",
-  "description": "",
+  "name": "Multi Size Transformation",
+  "description": "You're able to become a small version for 1 minute, you then have to wait 3 min before you can go small again.",
   "type": "origins:multiple",
   "toggle": {
     "type": "origins:active_self",

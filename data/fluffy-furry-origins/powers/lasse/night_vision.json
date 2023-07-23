@@ -1,6 +1,6 @@
 {
-  "name": "night_vision",
-  "description": "",
+  "name": "Night Eyes",
+  "description": "You have eyes that can see in completely dark areas for a duration of time.",
   "type": "origins:active_self",
   "entity_action": {
     "type": "origins:apply_effect",

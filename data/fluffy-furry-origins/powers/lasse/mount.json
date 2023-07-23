@@ -1,6 +1,6 @@
 {
-  "name": "mount",
-  "description": "",
+  "name": "Catch a ride!",
+  "description": "Other players are able to catch a ride on your back.",
   "type": "origins:multiple",
   "mount": {
     "type": "origins:action_on_being_used",
