@@ -28,7 +28,7 @@
           "item_condition": {
             "type": "origins:ingredient",
             "ingredient": {
-              "item": "minecraft:string"
+              "tag": "minecraft:wool"
             }
           }
         },
@@ -37,7 +37,7 @@
           "actions": [
             {
               "type": "origins:heal",
-              "amount": 1
+              "amount": 4
             },
             {
               "type": "origins:equipped_item_action",
