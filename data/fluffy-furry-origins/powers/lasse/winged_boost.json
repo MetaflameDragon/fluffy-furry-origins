@@ -1,4 +1,6 @@
 {
+  "name": "Winged Boost",
+  "description": "You can propel yourself forward with your wings to get high speed. Wearing any armor makes this boost significantly weaker, though.",
   "type": "origins:multiple",
   "velocity_boost_normal": {
     "type": "origins:active_self",
