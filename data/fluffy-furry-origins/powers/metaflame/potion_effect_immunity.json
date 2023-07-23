@@ -1,6 +1,6 @@
 {
   "name": "Pure Machine",
-  "description": "You have no biological parts and therefore aren't suspetible to many potion effects, both negative and positive.",
+  "description": "You have no biological parts and therefore aren't susceptible to many potion effects, both negative and positive.",
   "type": "origins:effect_immunity",
   "effects": [
     "minecraft:poison",

@@ -1,6 +1,6 @@
 {
   "name": "Running hot",
-  "description": "Your internal elemant produce a lot of heat and can easily overheat. Hot biomes and fire cause adverse effects making your systems thermal throttle or fail faster.",
+  "description": "Your internal parts produce a lot of heat and can easily overheat. Hot biomes and fire cause adverse effects making your systems thermal throttle or fail faster.",
   "type": "origins:multiple",
   "status_effects": {
     "type": "origins:stacking_status_effect",

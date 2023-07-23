@@ -1,6 +1,6 @@
 {
   "name": "Running hot",
-  "description": "Your internal elemant produce a lot of heat and can easily overheat.",
+  "description": "Your internal parts produce a lot of heat and can easily overheat.",
   "hidden": true,
   "type": "origins:modify_damage_taken",
   "damage_condition": {
