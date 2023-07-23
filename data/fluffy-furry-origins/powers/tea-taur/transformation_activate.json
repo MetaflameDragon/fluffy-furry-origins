@@ -1,48 +1,21 @@
 {
-  "name": "Transform",
-  "description": "You're able to transform yourself into a large and strong taur by consuming an emerald (You're still adorable tho.)",
-  "type": "origins:multiple",
-  "item": {
-    "type": "origins:active_self",
-    "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:change_resource",
-          "resource": "fluffy-furry-origins:tea-taur/transformation_resources_is_active",
-          "change": 1
-        },
-        {
-          "type": "origins:equipped_item_action",
-          "equipment_slot": "mainhand",
-          "action": {
-            "type": "origins:consume",
-            "amount": 1
-          }
-        }
-      ]
-    },
-    "condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:resource",
-          "resource": "fluffy-furry-origins:tea-taur/transformation_resources_age",
-          "comparison": "==",
-          "compare_to": 0
-        },
-        {
-          "type": "origins:equipped_item",
-          "equipment_slot": "mainhand",
-          "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "item": "minecraft:emerald"
-            }
-          }
-        }
-      ]
-    },
-    "key": "key.origins.secondary_active"
-  }
+  "type": "apugli:edible_item",
+  "item_condition": {
+    "type": "apoli:ingredient",
+    "ingredient": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "fluffy-furry-origins:tea-taur/transformation_resources_is_active",
+    "change": 1
+  },
+  "food_component": {
+    "hunger": 1,
+    "saturation": 1,
+    "always_edible": true
+  },
+  "use_action": "eat",
+  "sound": "minecraft:block.amethyst_cluster.break"
 }
