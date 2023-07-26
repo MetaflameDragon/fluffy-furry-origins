@@ -6,9 +6,16 @@
       "item": "minecraft:emerald"
     }
   },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "fluffy-furry-origins:tea-taur/transformation_resources_is_active",
+    "comparison": "==",
+    "compare_to": 0
+  },
   "entity_action": {
     "type": "origins:change_resource",
     "resource": "fluffy-furry-origins:tea-taur/transformation_resources_is_active",
+    "operation": "set",
     "change": 1
   },
   "food_component": {
