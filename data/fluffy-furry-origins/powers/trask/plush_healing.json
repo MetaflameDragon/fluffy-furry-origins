@@ -1,55 +1,58 @@
 {
   "name": "Plush Repair",
   "description": "You can't eat or heal naturally, you need to be repaired with the correct Materials. (Wool)",
-  "type": "origins:active_self",
-  "key": "key.origins.primary_active",
-  "cooldown": 20,
-  "hud_render": {
-    "should_render": true,
-    "condition":{
-      "type":"origins:resource",
-      "resource":"fluffy-furry-origins:trask/plush_healing",
-      "comparison":">",
-      "compare_to":0
-    }
-  },
-  "condition": {
-    "type": "origins:health",
-    "comparison": "<",
-    "compare_to": 20
-  },
-  "entity_action": {
-    "type": "origins:if_else_list",
-    "actions": [
-      {
-        "condition": {
-          "type": "origins:equipped_item",
-          "equipment_slot": "mainhand",
-          "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "tag": "minecraft:wool"
-            }
-          }
-        },
-        "action": {
-          "type": "origins:and",
-          "actions": [
-            {
-              "type": "origins:heal",
-              "amount": 2
-            },
-            {
-              "type": "origins:equipped_item_action",
-              "equipment_slot": "mainhand",
-              "action": {
-                "type": "origins:consume",
-                "amount": 1
-              }
-            }
-          ]
-        }
+  "type": "origins:multiple",
+  "wool": {
+    "type": "apugli:edible_item",
+    "item_condition": {
+      "type": "apoli:ingredient",
+      "ingredient": {
+        "tag": "minecraft:wool"
       }
-    ]
+    },
+    "condition": {
+      "type": "origins:health",
+      "comparison": "<",
+      "compare_to": 20
+    },
+    "entity_action": {
+      "type": "origins:heal",
+      "__comment": "Intended to heal 2 hearts, but the heal amount works weirdly for some reason",
+      "amount": 2.667
+    },
+    "food_component": {
+      "hunger": 0,
+      "saturation": 0,
+      "always_edible": true
+    },
+    "use_action": "eat",
+    "sound": "minecraft:block.wool.hit"
+  },
+  "string": {
+    "type": "apugli:edible_item",
+    "item_condition": {
+      "type": "apoli:ingredient",
+      "ingredient": {
+        "item": "minecraft:string"
+      }
+    },
+    "condition": {
+      "type": "origins:health",
+      "comparison": "<",
+      "compare_to": 20
+    },
+    "entity_action": {
+      "type": "origins:heal",
+      "__comment": "Intended to heal 0.5 hearts, but the heal amount works weirdly for some reason",
+      "amount": 0.667
+    },
+    "food_component": {
+      "hunger": 0,
+      "saturation": 0,
+      "always_edible": true,
+      "snack": true
+    },
+    "use_action": "eat",
+    "sound": "minecraft:block.vine.hit"
   }
 }
