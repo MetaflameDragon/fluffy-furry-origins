@@ -7,6 +7,7 @@ scale set pehkui:falling 0.4
 scale set pehkui:step_height 1.5
 scale set pehkui:projectiles 1.4
 scale set pehkui:drops 2
+scale set pehkui:jump_height 1.2
 
 scale set pehkui:attack 0.5
 scale persist set true
