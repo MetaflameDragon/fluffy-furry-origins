@@ -2,141 +2,57 @@
   "name": "Self maintenance",
   "description": "You can't heal naturally and instead need to repair yourself with metals, processed sheets are much easier to apply.",
   "type": "origins:multiple",
-  "use_item": {
-    "type": "origins:active_self",
-    "cooldown": 1,
-    "key": {
-      "key": "key.use",
-      "continuous": true
-    },
-    "condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:health",
-          "comparison": "<",
-          "compare_to": 20
-        },
-        {
-          "type": "origins:equipped_item",
-          "equipment_slot": "mainhand",
-          "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "tag": "fluffy-furry-origins:self_repair_metal_items"
-            }
-          }
-        }
-      ]
-    },
-    "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:change_resource",
-          "resource": "fluffy-furry-origins:metaflame/self_repair_use_progress",
-          "change": 1
-        },
-        {
-          "type": "origins:trigger_cooldown",
-          "power": "fluffy-furry-origins:metaflame/self_repair_is_using"
-        }
-      ]
-    }
-  },
-  "use_progress": {
-    "type": "origins:resource",
-    "min": 0,
-    "max": 60,
-    "max_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:equipped_item_action",
-          "equipment_slot": "mainhand",
-          "action": {
-            "type": "origins:consume",
-            "amount": 1
-          }
-        },
-        {
-          "type": "origins:change_resource",
-          "resource": "fluffy-furry-origins:metaflame/self_repair_use_progress",
-          "operation": "set",
-          "change": 0
-        },
-        {
-          "type": "origins:if_else_list",
-          "actions": [
-            {
-              "condition": {
-                "type": "origins:equipped_item",
-                "equipment_slot": "mainhand",
-                "item_condition": {
-                  "type": "origins:ingredient",
-                  "ingredient": {
-                    "item": "minecraft:iron_ingot"
-                  }
-                }
-              },
-              "action": {
-                "type": "origins:heal",
-                "amount": 2
-              }
-            },
-            {
-              "condition": {
-                "type": "origins:equipped_item",
-                "equipment_slot": "mainhand",
-                "item_condition": {
-                  "type": "origins:ingredient",
-                  "ingredient": {
-                    "item": "create:iron_sheet"
-                  }
-                }
-              },
-              "action": {
-                "type": "origins:heal",
-                "amount": 4
-              }
-            }
-          ]
-        }
-      ]
-    },
-    "hud_render": {
-      "should_render": true,
-      "sprite_location": "origins:textures/gui/resource_bar.png",
-      "bar_index": 0,
-      "condition": {
-        "type": "origins:resource",
-        "resource": "fluffy-furry-origins:metaflame/self_repair_use_progress",
-        "comparison": ">",
-        "compare_to": 0
+  "iron_nugget": {
+    "type": "apugli:edible_item",
+    "item_condition": {
+      "type": "apoli:ingredient",
+      "ingredient": {
+        "item": "minecraft:iron_nugget"
       }
-    }
-  },
-  "reset_when_not_using": {
-    "type": "origins:action_over_time",
-    "interval": 10,
+    },
     "condition": {
-      "type": "origins:resource",
-      "resource": "fluffy-furry-origins:metaflame/self_repair_is_using",
-      "comparison": "==",
-      "compare_to": 0
+      "type": "origins:health",
+      "comparison": "<",
+      "compare_to": 20
     },
     "entity_action": {
-      "type": "origins:change_resource",
-      "resource": "fluffy-furry-origins:metaflame/self_repair_use_progress",
-      "operation": "set",
-      "change": 0
-    }
+      "type": "origins:heal",
+      "__comment": "Intended to heal 0.5 hearts, but the heal amount works weirdly for some reason",
+      "amount": 0.667
+    },
+    "food_component": {
+      "hunger": 0,
+      "saturation": 0,
+      "always_edible": true,
+      "snack": true
+    },
+    "use_action": "eat",
+    "sound": "minecraft:block.metal.hit"
   },
-  "is_using": {
-    "type": "origins:cooldown",
-    "cooldown": 2,
-    "hud_render": {
-      "should_render": false
-    }
+  "iron_plate": {
+    "type": "apugli:edible_item",
+    "item_condition": {
+      "type": "apoli:ingredient",
+      "ingredient": {
+        "item": "create:iron_sheet"
+      }
+    },
+    "condition": {
+      "type": "origins:health",
+      "comparison": "<",
+      "compare_to": 20
+    },
+    "entity_action": {
+      "type": "origins:heal",
+      "__comment": "Intended to heal 6 hearts, but the heal amount works weirdly for some reason",
+      "amount": 8
+    },
+    "food_component": {
+      "hunger": 0,
+      "saturation": 0,
+      "always_edible": true
+    },
+    "use_action": "eat",
+    "sound": "minecraft:block.anvil.fall"
   }
 }
