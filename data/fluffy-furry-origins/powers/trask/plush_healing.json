@@ -1,6 +1,6 @@
 {
   "name": "Plush Repair",
-  "description": "You can't eat or heal naturally, you need to be repaired with the correct Materials. (Wool)",
+  "description": "You can't eat or heal naturally, you need to be repaired with the correct Materials. (String & Wool)",
   "type": "origins:multiple",
   "wool": {
     "type": "apugli:edible_item",

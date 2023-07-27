@@ -1,6 +1,6 @@
 {
-  "name": "hot_biome",
-  "description": "// Slowness 2, Hunger 2, Weakness 1 in hot biomes under sunlight or in the Nether, unless you have Fire Resistance.",
+  "name": "Bad With Heat",
+  "description": "Hot biomes are hard for you to handle, making you weak and slow.",
   "type": "origins:stacking_status_effect",
   "min_stacks": 0,
   "max_stacks": 1,

@@ -1,6 +1,6 @@
 {
-  "name": "defense",
-  "description": "",
+  "name": "Titanium Hull",
+  "description": "You have a hard and durable titanium hull giving you better base defence.",
   "type": "origins:multiple",
   "scale": {
     "type": "origins:action_over_time",

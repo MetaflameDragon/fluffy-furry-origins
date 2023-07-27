@@ -1,5 +1,5 @@
 {
-  "name": "Advanced Element Reactor",
+  "name": "Element Reactor",
   "description": "You're equipped with an advanced element reactor, allowing you to turn coal, redstone and other resources into energy!",
   "type": "origins:multiple",
   "coal": {
