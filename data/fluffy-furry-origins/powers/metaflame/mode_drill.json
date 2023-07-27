@@ -50,15 +50,11 @@
       "operation": "multiply_base",
       "value": 2.0
     },
-    "bientity_condition": {
-      "type": "origins:actor_condition",
-      "condition": {
-        "__comment": "Workaround, using only condition doesn't work here",
-        "type": "origins:resource",
-        "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
-        "comparison": "==",
-        "compare_to": 1
-      }
+    "condition": {
+      "type": "origins:resource",
+      "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
+      "comparison": "==",
+      "compare_to": 1
     }
   }
 }
