@@ -1,6 +1,6 @@
 {
-  "name": "dogfighter",
-  "description": "",
+  "name": "Winged Fighter",
+  "description": "You deal more damaging while flying at high speeds.",
   "type": "origins:modify_damage_dealt",
   "bientity_condition": {
     "type": "origins:actor_condition",
