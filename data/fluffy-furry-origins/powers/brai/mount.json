@@ -10,8 +10,7 @@
     "bientity_condition": {
       "type": "origins:target_condition",
       "condition": {
-        "type": "origins:passenger",
-        "inverted": true
+        "type": "origins:sneaking"
       }
     }
   }
