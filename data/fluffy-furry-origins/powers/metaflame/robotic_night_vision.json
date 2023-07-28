@@ -1,0 +1,35 @@
+{
+  "name": "Night Eyes",
+  "description": "You have eyes that can see in completely dark areas for a duration of time.",
+  "type": "origins:multiple",
+  "effect": {
+    "type": "origins:night_vision",
+    "strength": 1,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    }
+  },
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+      "key": "key.origins.primary_active"
+    }
+  },
+  "overlay": {
+    "type": "origins:overlay",
+    "texture": "fluffy-furry-origins:textures/block/night_vision_overlay.png",
+    "red": 0.1,
+    "green": 1,
+    "blue": 0.2,
+    "draw_mode": "texture",
+    "draw_phase": "below_hud",
+    "hide_with_hud": false,
+    "visible_in_third_person": true,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    }
+  }
+}

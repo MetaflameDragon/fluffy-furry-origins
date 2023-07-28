@@ -11,7 +11,8 @@
     "fluffy-furry-origins:metaflame/mode_toggle",
     "fluffy-furry-origins:metaflame/mode_drill",
     "fluffy-furry-origins:metaflame/mode_melee",
-    "fluffy-furry-origins:metaflame/defense"
+    "fluffy-furry-origins:metaflame/defense",
+    "fluffy-furry-origins:metaflame/robotic_night_vision"
   ],
   "icon": "create:mechanical_arm",
   "order": 0,
