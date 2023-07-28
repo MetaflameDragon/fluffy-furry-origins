@@ -1,0 +1,59 @@
+{
+  "name": "dogfighter",
+  "description": "",
+  "type": "origins:modify_damage_dealt",
+  "bientity_condition": {
+    "type": "origins:actor_condition",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:fall_flying"
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "apugli:velocity",
+              "x": 0.6,
+              "comparison": ">="
+            },
+            {
+              "type": "apugli:velocity",
+              "y": 0.6,
+              "comparison": ">="
+            },
+            {
+              "type": "apugli:velocity",
+              "z": 0.6,
+              "comparison": ">="
+            },
+            {
+              "type": "apugli:velocity",
+              "x": -0.6,
+              "comparison": "<="
+            },
+            {
+              "type": "apugli:velocity",
+              "y": -0.6,
+              "comparison": "<="
+            },
+            {
+              "type": "apugli:velocity",
+              "z": -0.6,
+              "comparison": "<="
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "damage_condition": {
+    "type": "origins:name",
+    "name": "player"
+  },
+  "modifier": {
+    "operation": "add_base_early",
+    "value": 4
+  }
+}
