@@ -22,6 +22,8 @@ jobs:
       - name: Autotag
         id: autotag
         uses: phish108/autotag-action@v1.1.55
+        env:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Zip Release
         # You may pin to the exact commit or the version.
@@ -38,3 +40,4 @@ jobs:
           artifacts: "fluffy-furry-origins-datapack.zip"
           draft: true
           tag: ${{ steps.autotag.outputs.new_tag }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
