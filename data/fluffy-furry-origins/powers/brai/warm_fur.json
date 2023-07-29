@@ -1,0 +1,9 @@
+{
+  "name": "warm_fur",
+  "description": "",
+  "type": "origins:invulnerability",
+  "damage_condition": {
+    "type": "origins:name",
+    "name": "freeze"
+  }
+}
