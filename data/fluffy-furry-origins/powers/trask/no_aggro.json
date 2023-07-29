@@ -1,9 +1,29 @@
 {
   "name": "no_aggro",
   "description": "// No aggro except for nether",
-  "type": "apugli:mobs_ignore",
-  "condition": {
-    "type": "origins:dimension",
-    "dimension": "minecraft:the_nether"
+  "type": "origins:multiple",
+  "ignore": {
+    "type": "apugli:mobs_ignore",
+    "mob_condition": {
+      "type": "origins:nbt",
+      "nbt": "{Tags: ['mob_attack_trask']}",
+      "inverted": true
+    },
+    "condition": {
+      "type": "origins:dimension",
+      "dimension": "minecraft:the_nether",
+      "inverted": true
+    }
+  },
+  "aggravate": {
+    "type": "origins:target_action_on_hit",
+    "cooldown": 1,
+    "target_condition": {
+      "type": "origins:living"
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "tag @s add mob_attack_trask"
+    }
   }
 }
