@@ -39,5 +39,5 @@ jobs:
         with:
           artifacts: "fluffy-furry-origins-datapack.zip"
           draft: true
-          tag: ${{ steps.autotag.outputs.new_tag }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ steps.autotag.outputs.new-tag }}
+          token: ${{ secrets.GITHUB_TOKEN }}
