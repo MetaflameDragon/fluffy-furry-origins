@@ -1,0 +1,9 @@
+{
+  "name": "no_aggro",
+  "description": "// No aggro except for nether",
+  "type": "apugli:mobs_ignore",
+  "condition": {
+    "type": "origins:dimension",
+    "dimension": "minecraft:the_nether"
+  }
+}
