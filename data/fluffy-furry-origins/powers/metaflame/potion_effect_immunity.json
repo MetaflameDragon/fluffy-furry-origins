@@ -1,14 +1,21 @@
 {
   "name": "Pure Machine",
   "description": "You have no biological parts and therefore aren't susceptible to many potion effects, both negative and positive.",
-  "type": "origins:effect_immunity",
-  "effects": [
-    "minecraft:poison",
-    "minecraft:wither",
-    "minecraft:weakness",
-    "minecraft:hunger",
-    "minecraft:instant_damage",
-    "minecraft:instant_health",
-    "minecraft:regeneration"
-  ]
+  "type": "origins:multiple",
+  "status_effects": {
+    "type": "origins:effect_immunity",
+    "effects": [
+      "minecraft:poison",
+      "minecraft:wither",
+      "minecraft:weakness",
+      "minecraft:hunger",
+      "minecraft:instant_damage",
+      "minecraft:instant_health",
+      "minecraft:regeneration"
+    ]
+  },
+  "instant_effects": {
+    "type": "apugli:instant_effect_immunity",
+    "inverted": true
+  }
 }
