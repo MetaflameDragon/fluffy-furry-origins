@@ -1,6 +1,6 @@
 {
-  "name": "Night Eyes",
-  "description": "You have eyes that can see in completely dark areas for a duration of time.",
+  "name": "",
+  "description": "",
   "type": "origins:multiple",
   "effect": {
     "type": "origins:night_vision",
