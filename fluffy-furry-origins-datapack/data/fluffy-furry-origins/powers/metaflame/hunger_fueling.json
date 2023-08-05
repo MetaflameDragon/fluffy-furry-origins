@@ -33,5 +33,11 @@
     },
     "use_action": "eat",
     "sound": "minecraft:block.sand.break"
+  },
+  "no_eating": {
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:food"
+    }
   }
 }

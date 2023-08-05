@@ -1,0 +1,73 @@
+{
+  "name": "metal_casing_armor_restriction",
+  "description": "",
+  "type": "origins:restrict_armor",
+  "head": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:armor_value",
+        "comparison": "<",
+        "compare_to": 3
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "fluffy-furry-origins:metaflame_equippable_armor"
+        },
+        "inverted": true
+      }
+    ]
+  },
+  "chest": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:armor_value",
+        "comparison": "<",
+        "compare_to": 8
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "fluffy-furry-origins:metaflame_equippable_armor"
+        },
+        "inverted": true
+      }
+    ]
+  },
+  "legs": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:armor_value",
+        "comparison": "<",
+        "compare_to": 6
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "fluffy-furry-origins:metaflame_equippable_armor"
+        },
+        "inverted": true
+      }
+    ]
+  },
+  "feet": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:armor_value",
+        "comparison": "<",
+        "compare_to": 3
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "fluffy-furry-origins:metaflame_equippable_armor"
+        },
+        "inverted": true
+      }
+    ]
+  }
+}

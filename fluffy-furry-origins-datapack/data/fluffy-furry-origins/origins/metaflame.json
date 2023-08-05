@@ -3,7 +3,6 @@
     "fluffy-furry-origins:metaflame/potion_effect_immunity",
     "fluffy-furry-origins:metaflame/self_repair",
     "fluffy-furry-origins:metaflame/no_breathing",
-    "origins-plus-plus:part-robot/already_iron",
     "fluffy-furry-origins:metaflame/hot_biome",
     "fluffy-furry-origins:metaflame/overheat",
     "fluffy-furry-origins:metaflame/hunger_fueling",
@@ -12,6 +11,7 @@
     "fluffy-furry-origins:metaflame/mode_drill",
     "fluffy-furry-origins:metaflame/mode_melee",
     "fluffy-furry-origins:metaflame/titanium_hull",
+    "fluffy-furry-origins:metaflame/metal_casing_armor_restriction",
     "fluffy-furry-origins:metaflame/robotic_night_vision"
   ],
   "icon": "create:mechanical_arm",
