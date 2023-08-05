@@ -23,6 +23,8 @@ jobs:
         id: autotag
         uses: phish108/autotag-action@v1.1.55
         env:
+          release-branch: release
+          branch: release
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Zip Release
