@@ -39,25 +39,7 @@
         },
         {
           "type": "origins:resource",
-          "resource": "fluffy-furry-origins:lasse/heavy_scales_head_b",
-          "comparison": "==",
-          "compare_to": 0
-        },
-        {
-          "type": "origins:resource",
-          "resource": "fluffy-furry-origins:lasse/heavy_scales_chest_b",
-          "comparison": "==",
-          "compare_to": 0
-        },
-        {
-          "type": "origins:resource",
-          "resource": "fluffy-furry-origins:lasse/heavy_scales_legs_b",
-          "comparison": "==",
-          "compare_to": 0
-        },
-        {
-          "type": "origins:resource",
-          "resource": "fluffy-furry-origins:lasse/heavy_scales_feet_b",
+          "resource": "fluffy-furry-origins:lasse/heavy_scales_armor_weight_sum",
           "comparison": "==",
           "compare_to": 0
         }
@@ -106,33 +88,10 @@
           "type": "origins:fall_flying"
         },
         {
-          "type": "origins:or",
-          "conditions": [
-            {
-              "type": "origins:resource",
-              "resource": "fluffy-furry-origins:lasse/heavy_scales_head_b",
-              "comparison": "==",
-              "compare_to": 1
-            },
-            {
-              "type": "origins:resource",
-              "resource": "fluffy-furry-origins:lasse/heavy_scales_chest_b",
-              "comparison": "==",
-              "compare_to": 1
-            },
-            {
-              "type": "origins:resource",
-              "resource": "fluffy-furry-origins:lasse/heavy_scales_legs_b",
-              "comparison": "==",
-              "compare_to": 1
-            },
-            {
-              "type": "origins:resource",
-              "resource": "fluffy-furry-origins:lasse/heavy_scales_feet_b",
-              "comparison": "==",
-              "compare_to": 1
-            }
-          ]
+          "type": "origins:resource",
+          "resource": "fluffy-furry-origins:lasse/heavy_scales_armor_weight_sum",
+          "comparison": ">",
+          "compare_to": 0
         }
       ]
     },

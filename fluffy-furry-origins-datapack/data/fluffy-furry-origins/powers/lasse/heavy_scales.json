@@ -1,128 +1,299 @@
 {
   "hidden": true,
-  "type":"origins:multiple",
-  "head_b":{
-    "type":"origins:resource",
-    "min":0,
-    "max":1,
-    "hud_render":{
-      "should_render":false
+  "type": "origins:multiple",
+  "head_b": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+      "should_render": false
     }
   },
-  "chest_b":{
-    "type":"origins:resource",
-    "min":0,
-    "max":1,
-    "hud_render":{
-      "should_render":false
+  "chest_b": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+      "should_render": false
     }
   },
-  "legs_b":{
-    "type":"origins:resource",
-    "min":0,
-    "max":1,
-    "hud_render":{
-      "should_render":false
+  "legs_b": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+      "should_render": false
     }
   },
-  "feet_b":{
-    "type":"origins:resource",
-    "min":0,
-    "max":1,
-    "hud_render":{
-      "should_render":false
+  "feet_b": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+      "should_render": false
     }
   },
-  "head_check":{
-    "type":"origins:action_over_time",
-    "interval":5,
-    "rising_action":{
-      "type":"origins:change_resource",
-      "resource":"*:*_head_b",
-      "change":1
-    },
-    "falling_action":{
-      "type":"origins:change_resource",
-      "resource":"*:*_head_b",
-      "change":-1
-    },
-    "condition":{
-      "type":"origins:equipped_item",
-      "equipment_slot":"head",
-      "item_condition":{
-        "type":"origins:armor_value",
-        "comparison":">",
-        "compare_to":1
+  "feather_falling_level": {
+    "type": "origins:resource",
+    "min": -4,
+    "max": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "armor_weight_sum": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 7,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+      "bar_index": 17,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "*:*_armor_weight_sum",
+        "comparison": ">",
+        "compare_to": 0
       }
     }
   },
-  "chest_check":{
-    "type":"origins:action_over_time",
-    "interval":5,
-    "rising_action":{
-      "type":"origins:change_resource",
-      "resource":"*:*_chest_b",
-      "change":1
+  "head_check": {
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "rising_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_head_b",
+      "change": 1
     },
-    "falling_action":{
-      "type":"origins:change_resource",
-      "resource":"*:*_chest_b",
-      "change":-1
+    "falling_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_head_b",
+      "change": -1
     },
-    "condition":{
-      "type":"origins:equipped_item",
-      "equipment_slot":"chest",
-      "item_condition":{
-        "type":"origins:armor_value",
-        "comparison":">",
-        "compare_to":3
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "head",
+      "item_condition": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 1
       }
     }
   },
-  "legs_check":{
-    "type":"origins:action_over_time",
-    "interval":5,
-    "rising_action":{
-      "type":"origins:change_resource",
-      "resource":"*:*_legs_b",
-      "change":1
+  "chest_check": {
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "rising_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_chest_b",
+      "change": 1
     },
-    "falling_action":{
-      "type":"origins:change_resource",
-      "resource":"*:*_legs_b",
-      "change":-1
+    "falling_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_chest_b",
+      "change": -1
     },
-    "condition":{
-      "type":"origins:equipped_item",
-      "equipment_slot":"legs",
-      "item_condition":{
-        "type":"origins:armor_value",
-        "comparison":">",
-        "compare_to":2
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "chest",
+      "item_condition": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 3
       }
     }
   },
-  "feet_check":{
-    "type":"origins:action_over_time",
-    "interval":5,
-    "rising_action":{
-      "type":"origins:change_resource",
-      "resource":"*:*_feet_b",
-      "change":1
+  "legs_check": {
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "rising_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_legs_b",
+      "change": 1
     },
-    "falling_action":{
-      "type":"origins:change_resource",
-      "resource":"*:*_feet_b",
-      "change":-1
+    "falling_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_legs_b",
+      "change": -1
     },
-    "condition":{
-      "type":"origins:equipped_item",
-      "equipment_slot":"feet",
-      "item_condition":{
-        "type":"origins:armor_value",
-        "comparison":">",
-        "compare_to":1
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "legs",
+      "item_condition": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 2
       }
+    }
+  },
+  "feet_check": {
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "rising_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_feet_b",
+      "change": 1
+    },
+    "falling_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_feet_b",
+      "change": -1
+    },
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "feet",
+      "item_condition": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 1
+      }
+    }
+  },
+  "feather_falling_check": {
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "entity_action": {
+      "type": "origins:if_else_list",
+      "actions": [
+        {
+          "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "feet",
+            "item_condition": {
+              "type": "origins:enchantment",
+              "enchantment": "minecraft:feather_falling",
+              "comparison": "==",
+              "compare_to": 0
+            }
+          },
+          "action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_feather_falling_level",
+            "change": 0,
+            "operation": "set"
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "feet",
+            "item_condition": {
+              "type": "origins:enchantment",
+              "enchantment": "minecraft:feather_falling",
+              "comparison": "==",
+              "compare_to": 1
+            }
+          },
+          "action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_feather_falling_level",
+            "change": -1,
+            "operation": "set"
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "feet",
+            "item_condition": {
+              "type": "origins:enchantment",
+              "enchantment": "minecraft:feather_falling",
+              "comparison": "==",
+              "compare_to": 2
+            }
+          },
+          "action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_feather_falling_level",
+            "change": -2,
+            "operation": "set"
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "feet",
+            "item_condition": {
+              "type": "origins:enchantment",
+              "enchantment": "minecraft:feather_falling",
+              "comparison": "==",
+              "compare_to": 3
+            }
+          },
+          "action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_feather_falling_level",
+            "change": -3,
+            "operation": "set"
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "feet",
+            "item_condition": {
+              "type": "origins:enchantment",
+              "enchantment": "minecraft:feather_falling",
+              "comparison": ">=",
+              "compare_to": 4
+            }
+          },
+          "action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_feather_falling_level",
+            "change": -4,
+            "operation": "set"
+          }
+        }
+      ]
+    },
+    "falling_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_feather_falling_level",
+      "change": 0,
+      "operation": "set"
+    },
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "feet",
+      "item_condition": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 1
+      }
+    }
+  },
+  "armor_weight_sum_check": {
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "entity_action": {
+      "type": "origins:modify_resource",
+      "modifier": {
+        "operation": "set_total",
+        "value": 0,
+        "resource": "*:*_head_b",
+        "modifier": {
+          "operation": "add_base_early",
+          "value": 0,
+          "resource": "*:*_chest_b",
+          "modifier": {
+            "operation": "add_base_early",
+            "value": 0,
+            "resource": "*:*_legs_b",
+            "modifier": {
+              "operation": "add_base_early",
+              "value": 0,
+              "resource": "*:*_feet_b",
+              "modifier": {
+                "operation": "add_base_early",
+                "value": 0,
+                "resource": "*:*_feather_falling_level"
+              }
+            }
+          }
+        }
+      },
+      "resource": "*:*_armor_weight_sum"
     }
   }
 }
