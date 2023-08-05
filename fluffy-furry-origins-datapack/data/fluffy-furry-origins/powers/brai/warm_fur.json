@@ -1,6 +1,6 @@
 {
-  "name": "warm_fur",
-  "description": "",
+  "name": "Fluffy Coat",
+  "description": "You got big warm fluffy fur on you, keeping you nice and warm, even in the coldest environments.",
   "type": "origins:invulnerability",
   "damage_condition": {
     "type": "origins:name",

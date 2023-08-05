@@ -1,4 +1,6 @@
 {
+	"name": "Lift Off!",
+	"description": "You're able to launch yourself into the air.",
 	"type":"origins:launch",
 	"cooldown":600,
 	"hud_render":{

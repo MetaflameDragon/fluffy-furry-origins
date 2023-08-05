@@ -1,6 +1,6 @@
 {
-	"name": "",
-	"description": "",
+	"name": "So Much Weight",
+	"description": "You take increased kinetic damage.",
 	"type":"origins:modify_damage_taken",
 	"modifier":{
 		"value":0.5,
