@@ -1,4 +1,6 @@
 {
+	"name": "Big Dragon.",
+	"description": "You're taller than usual, 2.5 blocks.",
 	"type":"origins:multiple",
 	"scale":{
 		"type":"origins:action_over_time",

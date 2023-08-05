@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "Enhanced Low-light Capabilities",
+  "description": "Your optical sensors have been equipped with state of the art low-light technology allowing you to see in dimly lit to completely dark areas without too much noise.",
   "type": "origins:multiple",
   "effect": {
     "type": "origins:night_vision",

@@ -1,6 +1,6 @@
 {
-  "name": "no_aggro",
-  "description": "// No aggro except for nether",
+  "name": "Friend Shape :3",
+  "description": "You're shaped like a friend, making everyone like you. Mobs won't attack you unless you attack them. Exception: Nether, they're meanies :c",
   "type": "origins:multiple",
   "ignore": {
     "type": "apugli:mobs_ignore",
