@@ -19,7 +19,7 @@ jobs:
 
       - name: Autotag
         id: autotag
-        uses: phish108/autotag-action@v1.1.64
+        uses: MetaflameDragon/autotag-action@v0.1.0
         env:
           release-branch: "release"
           branch: release
