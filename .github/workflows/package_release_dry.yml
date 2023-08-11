@@ -1,0 +1,44 @@
+# This is a basic workflow to help you get started with Actions
+
+
+name: Package Release (Dry run)
+
+# Controls when the workflow will run
+on:
+  workflow_dispatch
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      - name: Autotag
+        id: autotag
+        uses: MetaflameDragon/autotag-action@v0.1.0
+        env:
+          release-branch: "release"
+          branch: release
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          dry-run: true
+
+#      - name: Zip Release
+#        # You may pin to the exact commit or the version.
+#        # uses: TheDoctor0/zip-release@a24011d8d445e4da5935a7e73c1f98e22a439464
+#        uses: TheDoctor0/zip-release@0.7.1
+#        with:
+#          filename: "fluffy-furry-origins-datapack.zip"
+#          path: "fluffy-furry-origins-datapack"
+#          type: "zip"
+#
+#      - name: Upload Release
+#        uses: ncipollo/release-action@v1.12.0
+#        with:
+#          artifacts: "fluffy-furry-origins-datapack.zip"
+#          draft: true
+#          tag: ${{ steps.autotag.outputs.new-tag }}
+#          token: ${{ secrets.GITHUB_TOKEN }}

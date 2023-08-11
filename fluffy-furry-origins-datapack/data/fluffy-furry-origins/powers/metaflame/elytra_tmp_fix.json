@@ -1,0 +1,10 @@
+{
+  "name": "Elytra render fix",
+  "description": "Fixes elytra rendering until an Apugli patch is released",
+  "hidden": true,
+  "type": "apugli:modify_equipped_item_render",
+  "slot": "chest",
+  "stack": {
+    "item": "minecraft:air"
+  }
+}

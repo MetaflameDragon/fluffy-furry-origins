@@ -44,9 +44,14 @@
         },
         {
           "type": "apoli:ingredient",
-          "ingredient": {
-            "tag": "fluffy-furry-origins:battery_fuels"
-          },
+          "ingredient": [
+            {
+              "tag": "fluffy-furry-origins:battery_fuels"
+            },
+            {
+              "tag": "fluffy-furry-origins:self_repair_metal_items"
+            }
+          ],
           "inverted": true
         }
       ]

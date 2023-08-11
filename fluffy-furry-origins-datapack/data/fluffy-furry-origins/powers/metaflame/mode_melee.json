@@ -54,5 +54,15 @@
       "comparison": "==",
       "compare_to": 2
     }
+  },
+  "keybind": {
+    "type": "origins:active_self",
+    "key": "key.origins.quinary_active",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
+      "operation": "set",
+      "change": 2
+    }
   }
 }
