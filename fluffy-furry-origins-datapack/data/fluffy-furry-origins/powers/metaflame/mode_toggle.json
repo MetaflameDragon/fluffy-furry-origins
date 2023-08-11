@@ -11,25 +11,14 @@
       "bar_index": 9
     }
   },
-  "toggle": {
+  "keybind": {
     "type": "origins:active_self",
-    "key": "key.origins.secondary_active",
+    "key": "key.origins.tertiary_active",
     "entity_action": {
-      "type": "origins:if_else",
-      "condition": {
-        "type": "origins:sneaking",
-        "inverted": true
-      },
-      "if_action": {
-        "type": "origins:change_resource",
-        "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
-        "change": 1
-      },
-      "else_action": {
-        "type": "origins:change_resource",
-        "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
-        "change": -1
-      }
+      "type": "origins:change_resource",
+      "resource": "fluffy-furry-origins:metaflame/mode_toggle_indicator_bar",
+      "operation": "set",
+      "change": 0
     }
   }
 }
