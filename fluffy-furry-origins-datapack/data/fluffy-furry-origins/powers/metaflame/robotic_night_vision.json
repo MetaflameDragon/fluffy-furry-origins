@@ -3,8 +3,36 @@
   "description": "Your optical sensors have been equipped with state of the art low-light technology allowing you to see in dimly lit to completely dark areas without too much noise.",
   "type": "origins:multiple",
   "effect": {
-    "type": "origins:night_vision",
-    "strength": 1,
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:night_vision",
+        "duration": 400
+      }
+    },
+    "falling_action": {
+      "type": "origins:clear_effect",
+      "effect": "minecraft:night_vision"
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    }
+  },
+  "instant_trigger": {
+    "type": "origins:active_self",
+    "key": {
+      "key": "key.origins.primary_active"
+    },
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:night_vision",
+        "duration": 400
+      }
+    },
     "condition": {
       "type": "origins:power_active",
       "power": "*:*_toggle"
