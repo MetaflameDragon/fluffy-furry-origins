@@ -9,7 +9,9 @@
       "type": "origins:apply_effect",
       "effect": {
         "effect": "minecraft:night_vision",
-        "duration": 400
+        "duration": 400,
+        "show_particles": false,
+        "show_icon": false
       }
     },
     "falling_action": {
@@ -30,7 +32,9 @@
       "type": "origins:apply_effect",
       "effect": {
         "effect": "minecraft:night_vision",
-        "duration": 400
+        "duration": 400,
+        "show_particles": false,
+        "show_icon": false
       }
     },
     "condition": {
