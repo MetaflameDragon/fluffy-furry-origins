@@ -6,7 +6,7 @@
     "min": 0,
     "max": 1,
     "hud_render": {
-      "should_render": true
+      "should_render": false
     }
   },
   "age": {
@@ -14,7 +14,16 @@
     "min": 0,
     "max": 50,
     "hud_render": {
-      "should_render": true
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+      "bar_index": 24,
+      "inverted": true,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "fluffy-furry-origins:tea-taur/transformation_resources_is_active",
+        "comparison": "==",
+        "compare_to": 1
+      }
     }
   },
   "age_tick": {
